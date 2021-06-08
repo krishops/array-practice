@@ -14,19 +14,12 @@ $("form#favorites").submit(function(event) {
 
   let favorites = newArray(color, movie, song, book);
   
-  console.log(favorites);
+  let favoritesTwo = [];
+  favoritesTwo.push(favorites[1],favorites[0],favorites[2]);
 
-  // let favoritesTwo = [favorites[1],favorites[0],favorites[2]].toString();
-
-  // console.log(favoritesTwo);
-
-  // let favoritesThree = [];
-  // favoritesThree.push(favoritesTwo);
-  // console.log(favoritesThree);
-
-  $("#output1").text(favorites[0]);
-  $("#output2").text(favorites[1]);
-  $("#output3").text(favorites[2]);
+  $("#output1").text(favoritesTwo[0]);
+  $("#output2").text(favoritesTwo[1]);
+  $("#output3").text(favoritesTwo[2]);
 });
 
 });
